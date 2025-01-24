@@ -1,0 +1,30 @@
+.footer {
+    background-color: #5a2eaa;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer-text {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .footer-links li a {
+    color: #ffa726;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-links li a:hover {
+    color: #ffcc80;
+  }
