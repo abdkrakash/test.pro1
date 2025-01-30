@@ -25,7 +25,6 @@ function Contact() {
 
   return (
     <section style={{ backgroundColor: "snow", paddingBottom: "50px" }}>
-      <h2 className="section-title"> {t("Contact Us")}</h2>
       
       <div className="contact-cards-container" style={{ marginBottom: "50px", backgroundColor: "#f8f9fa", padding: "20px", borderRadius: "10px" }}>
         <motion.div 
@@ -54,7 +53,7 @@ function Contact() {
           ))}
         </motion.div>
       </div>
-
+      <h2 className="section-title"> {t("Contact Us")}</h2>
       <div className="contact-form-container">
         <form className="contact-form" onSubmit={handleSubmit}>
           <input
@@ -85,16 +84,18 @@ function Contact() {
       </div>
       
       <div className="google-map">
-        <iframe
-          title="Google Map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093704!2d144.9556513153169!3d-37.81732697975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5df0f75a0b%3A0x5045675218ce6e0!2z2YXYs9is2K8g2KfZhNmG2YrYp9ix2YrYqQ!5e0!3m2!1sar!2sjo!4v1646278919843!5m2!1sar!2sjo"
-          width="100%"
-          height="400"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
+        
+
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3471.3766897665187!2d35.01405673128254!3d29.5345224805374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x150071875a9fca41%3A0xf5d61d999f967371!2sOrange%20Digital%20Village%20Aqaba!5e0!3m2!1sar!2sjo!4v1738244601477!5m2!1sar!2sjo"
+  width="100%"
+  height="400"
+  style={{ border: 0 }}
+  allowFullScreen=""
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+/>
+
       </div>
     </section>
   );
