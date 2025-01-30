@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./Contact.css";
+import { FaTwitter, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
+
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -7,6 +10,10 @@ function Contact() {
     email: "",
     message: "",
   });
+  const { t, i18n } = useTranslation();
+  
+      const changeLanguage = (lng) => 
+        i18n.changeLanguage(lng);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,12 +28,12 @@ function Contact() {
 
   return (
     <div className="contact-section">
-      <h2 className="section-title">Contact Us</h2>
+      <h2 className="section-title">  {t("Contact Us")} </h2>
       <form className="contact-form" onSubmit={handleSubmit}>
         <input
           type="text"
           name="name"
-          placeholder="Your Name"
+          placeholder={t("Your Name")}
           value={formData.name}
           onChange={handleChange}
           required
@@ -34,19 +41,19 @@ function Contact() {
         <input
           type="email"
           name="email"
-          placeholder="Your Email"
+          placeholder={t("Your Email")}
           value={formData.email}
           onChange={handleChange}
           required
         />
         <textarea
           name="message"
-          placeholder="Your Message"
+          placeholder= {t("Your Message")}
           value={formData.message}
           onChange={handleChange}
           required
         ></textarea>
-        <button type="submit">Send Message</button>
+        <button type="submit"> {t("Send Message")}</button>
       </form>
     </div>
   );

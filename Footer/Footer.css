@@ -1,5 +1,5 @@
 .footer {
-    background-color: #5a2eaa;
+    background-color: #4255a4;
     color: white;
     text-align: center;
     padding: 20px;
@@ -20,11 +20,12 @@
   }
   
   .footer-links li a {
-    color: #ffa726;
+    color: #ffcc80;
+
     text-decoration: none;
     transition: color 0.3s;
   }
   
   .footer-links li a:hover {
-    color: #ffcc80;
+    color: #12d9df;
   }
