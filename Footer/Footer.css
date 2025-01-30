@@ -2,7 +2,7 @@
     background-color: #4255a4;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 70px;
   }
   
   .footer-text {
@@ -28,4 +28,28 @@
   
   .footer-links li a:hover {
     color: #12d9df;
+  }
+  .footer-brand{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    gap: 15px;
+  }
+   .footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .footer-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .footer-links ul li{
+    list-style: none;
+    margin: 15px;
   }

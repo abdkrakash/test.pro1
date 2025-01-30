@@ -19,11 +19,8 @@ function Footer() {
              <p>
                 <span style={{color:'#ed128f'}}>{t("S")}</span>{t("hining")}  <span style={{color:"#fbd010"}}>{t("Ss")}</span>{t("tars")}   <span style={{color:"#12d9df"}}>{t("A")}</span>{t("cademy")}
                 </p>
- 
-            
-           
           </h2>
-          <p> 
+          <p style={{paddingInline:"20px"}}> 
             {t("footer-description")}
              </p>
           <div className="social-icons">
@@ -31,21 +28,26 @@ function Footer() {
             <a href="#"><FaFacebookF /></a>
             <a href="#"><FaLinkedinIn /></a>
           </div>
+          <p>
+        {t("©")}
+        </p>
         </div>
         <div className="footer-section footer-links">
           <ul>
+            <li><h2>  {t("Quick")} </h2></li>
             <li><a href="#">   {t("about")} </a></li>
             <li><a href="#"> {t("activity")}</a></li>
             <li><a href="#"> {t("contact")}</a></li>
+            <li><a href="#"> {t("students")}</a></li>
           </ul>
         </div>
         
       </div>
-      <div className="footer-bottom">
+      {/* <div className="footer-bottom">
         <p>
         {t("©")}
         </p>
-      </div>
+      </div> */}
     </footer>
   );
 }
