@@ -24,9 +24,9 @@ function Footer() {
             {t("footer-description")}
              </p>
           <div className="social-icons">
-            <a href="#"><FaTwitter /></a>
-            <a href="#"><FaFacebookF /></a>
-            <a href="#"><FaLinkedinIn /></a>
+            <a href="https://x.com/?mx=2"><FaTwitter /></a>
+            <a href="https://www.facebook.com/?locale=ar_AR"><FaFacebookF /></a>
+            <a href="https://www.linkedin.com/"><FaLinkedinIn /></a>
           </div>
           <p>
         {t("©")}
@@ -34,14 +34,22 @@ function Footer() {
         </div>
         <div className="footer-section footer-links">
           <ul>
-            <li><h2>  {t("Quick")} </h2></li>
+            <li><h2>  {t("Quick links")} </h2></li>
             <li><a href="#">   {t("about")} </a></li>
             <li><a href="#"> {t("activity")}</a></li>
             <li><a href="#"> {t("contact")}</a></li>
             <li><a href="#"> {t("students")}</a></li>
           </ul>
         </div>
-        
+        <div className="footer-section footer-links">
+          <ul>
+            <li><h2>  {t("partners")} </h2></li>
+            <li><a href="https://simplonline.co/login?redirect=%2Fclassrooms%2Fd4c96491-06fe-48f7-a0f3-5deb29d01377%2Fworkspaces%3Ftopic%3D28fa6069-d398-4279-bfde-f0ed8734a4c2"> {t("simplonline")}</a></li>
+            <li><a href="https://yo.orange.jo/orange-coding-academy"> {t("orange")}</a></li>
+            <li><a href="https://www.psut.edu.jo/ar"> {t("PSUT")}</a></li>
+            <li><a href="https://www.modee.gov.jo/Default/Ar"> {t("MoDEE")}</a></li>
+          </ul>
+        </div>
       </div>
       {/* <div className="footer-bottom">
         <p>
